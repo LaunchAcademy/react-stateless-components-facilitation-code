@@ -1,4 +1,3 @@
-// import './main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -11,6 +10,6 @@ let data = [
 ];
 
 ReactDOM.render(
-  <Playlist data={data} />,
-  document.getElementById('puppies')
+  <Playlist trackData={data} />,
+  document.getElementById('app')
 );
