@@ -9,7 +9,8 @@ let data = [
   { id: 3, title: "Chrome Sparks - Moonraker", playing: true, duration: "6:04" }
 ];
 
+
 ReactDOM.render(
-  <Playlist trackData={data} />,
+  <Playlist data={data} />,
   document.getElementById('app')
 );

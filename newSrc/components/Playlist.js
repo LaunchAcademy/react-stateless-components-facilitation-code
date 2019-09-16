@@ -2,7 +2,6 @@ import React from 'react';
 import Track from './Track.js';
 
 const Playlist = props => {
-
   let trackOne = <Track title={props.data[0].title}
     playing={props.data[0].playing} duration={props.data[0].duration} />;
 
@@ -24,7 +23,9 @@ const Playlist = props => {
 
   return(
     <ul className="tracks">
-      {trackComponents}
+      {trackOne}
+      {trackTwo}
+      {trackThree}
     </ul>
   );
 }
