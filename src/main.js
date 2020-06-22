@@ -8,19 +8,20 @@ import ReactDOM from 'react-dom';
 // ];
 
 let trackOne = <li className="track">
-  <i className="fa fa-play-circle-o" />
+  <i className="fas fa-play-circle"></i>
   Talking Heads - Found A Job - 4:30
 </li>;
 
 let trackTwo = <li className="track">
-  <i className="fa fa-play-circle-o" />
+  <i className="fas fa-play-circle" />
   Phoenix - Entertainment - 3:40
 </li>;
 
 let trackThree = <li className="track selected">
-  <i className="fa fa-pause-circle-o" />
+  <i className="fas fa-pause-circle" />
   Chrome Sparks - Moonraker - 6:04
 </li>;
+
 
 ReactDOM.render(
   <ul className="tracks">
