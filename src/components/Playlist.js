@@ -1,4 +1,3 @@
-// src/components/Playlist.js
 import React from 'react';
 import Track from './Track.js';
 
@@ -14,7 +13,7 @@ const Playlist = props => {
         playing={trackData[0].playing}
       />
       <Track
-        artist="Pheonix"
+        artist="Phoenix"
         title="Entertainment"
         duration="3:40"
         playing={false}
