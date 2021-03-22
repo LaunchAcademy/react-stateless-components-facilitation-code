@@ -11,7 +11,7 @@ const Track = (props) => {
   return(
     <li className="track">
       <i className={`far ${songSymbol}`}></i>
-      {props.artist} - {props.title} - {props.duration}
+      I am a React Component! - {props.title} - {props.duration}
     </li>
   )
 }
