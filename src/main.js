@@ -1,33 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import ReactDOM from "react-dom"
 
-// let data = [
-//   { id: 1, title: "Talking Heads - Found A Job", playing: false, duration: "4:30" },
-//   { id: 2, title: "Phoenix - Entertainment", playing: false, duration: "3:40" },
-//   { id: 3, title: "Chrome Sparks - Moonraker", playing: true, duration: "6:04" }
-// ];
+import Playlist from "./components/Playlist"
 
-let trackOne = <li className="track">
-  <i className="fas fa-play-circle"></i>
-  Talking Heads - Found A Job - 4:30
-</li>;
+const data = [
+  {
+    id: 1,
+    title: "Talking Heads - Found A Job",
+    playing: false,
+    duration: "4:30"
+  },
+  { id: 2, title: "Phoenix - Entertainment", playing: false, duration: "3:40" },
+  { id: 3, title: "Chrome Sparks - Moonraker", playing: true, duration: "6:04" }
+]
 
-let trackTwo = <li className="track">
-  <i className="fas fa-play-circle" />
-  Phoenix - Entertainment - 3:40
-</li>;
+ReactDOM.render(<Playlist myData={data} />, document.getElementById("app"))
 
-let trackThree = <li className="track selected">
-  <i className="fas fa-pause-circle" />
-  Chrome Sparks - Moonraker - 6:04
-</li>;
+// const trackOne = (
+//   <li className="track">
+//     <i className="fas fa-play-circle" />
+//     {data[0].title} - {data[0].duration}
+//   </li>
+// )
 
+// const trackTwo = (
+//   <li className="track">
+//     <i className="fas fa-play-circle" />
+//     {data[1].title} - {data[1].duration}
+//   </li>
+// )
 
-ReactDOM.render(
-  <ul className="tracks">
-    {trackOne}
-    {trackTwo}
-    {trackThree}
-  </ul>,
-  document.getElementById('app')
-);
+// const trackThree = (
+//   <li className="track selected">
+//     <i className="fas fa-pause-circle" />
+//     {data[2].title} - {data[2].duration}
+//   </li>
+// )
