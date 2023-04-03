@@ -1,12 +1,21 @@
-import React from 'react';
+import React from "react"
 
 const Track = (props) => {
-  return(
+  debugger
+  // any logic
+  console.log(props.playing)
+  let iconClass = "fa-play-circle"
+
+  if (props.playing === true) {
+    iconClass = "fa-pause-circle"
+  }
+
+  return (
     <li className="track">
-      <i className="fas fa-play-circle"></i>
+      <i className={`fas ${iconClass}`}></i>
       {props.title} - {props.duration}
     </li>
   )
-};
+}
 
-export default Track;
+export default Track
