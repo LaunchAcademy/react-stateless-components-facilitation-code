@@ -1,25 +1,16 @@
-// src/components/Playlist.js
-import React from 'react';
-import Track from './Track.js';
+import React from "react"
 
-const Playlist = props => {
+import Track from "./Track"
 
-  return(
-    <ul className="tracks">
-      <Track 
-        title={props.dataSet[0].title}
-        duration={props.dataSet[0].duration} 
-      />
-      <Track 
-        title={props.dataSet[1].title}
-        duration={props.dataSet[1].duration} 
-      />
-      <Track 
-        title={props.dataSet[2].title}
-        duration={props.dataSet[2].duration} 
-      />
-    </ul>
+const Playlist = (props) => {
+  // console.log(props);
+  return (
+    <div>
+      <Track trackData={props.playlistArray[0]} />
+      <Track trackData={props.playlistArray[1]} />
+      <Track trackData={props.playlistArray[2]} />
+    </div>
   )
 }
 
-export default Playlist;
+export default Playlist
