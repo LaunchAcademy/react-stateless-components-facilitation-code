@@ -10,6 +10,20 @@ const data = [
   { id: 3, title: "Chrome Sparks - Moonraker", playing: true, duration: "6:04" },
 ];
 
+// debugger
+
+// const listOfTracks = 
+//   <div>
+//     <h1>Dope Tracks</h1>
+//     <ul>
+//       <li>{data[0].title} - {data[0].duration}</li>
+//       <li>{data[1].title} - {data[1].duration}</li>
+//       <li>{data[2].title} - {data[2].duration}</li>
+//     </ul>
+//   </div>
+
+
 ReactDOM.render(
-<Playlist dataSet={data}/>, 
-document.getElementById("app"));
+  <Playlist playlistData={data} message="hi!" />, 
+  document.getElementById("app")
+);
